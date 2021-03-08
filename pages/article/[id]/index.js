@@ -1,14 +1,12 @@
-import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { server } from "../../../config";
+import Meta from "../../../components/Meta";
 
 const Article = ({ article }) => {
     return (
         <div>
-            <Head>
-                <title> Article Details </title>
-            </Head>
+            <Meta title={article.title} description={article.excerpt} />
             <h1> {article.title} </h1>
             <p> {article.body} </p>
             <br />

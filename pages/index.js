@@ -1,13 +1,11 @@
-import Head from 'next/head'
 import ArticleList from "../components/ArticleList";
 import {server} from '../config/index';
+import Meta from "../components/Meta";
 
 export default function Home({ articles }) {
     return (
         <div>
-            <Head>
-                <title>Home</title>
-            </Head>
+            <Meta title={"Home"} />
             <h1> Home Page </h1>
             <ArticleList articles={articles} />
         </div>

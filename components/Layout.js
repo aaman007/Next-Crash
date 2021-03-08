@@ -6,6 +6,7 @@ import Meta from "./Meta";
 const Layout = (props) => {
     return (
         <>
+            <Meta />
             <Navbar />
             <div className={styles.container}>
                 <main className={styles.main}>
